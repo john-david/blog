@@ -1,6 +1,6 @@
 {
   "sitename": "John David",
-  "sitedescription": "I write about Data Science, Software Engineering and whatever else I feel like. This website is built with nuxt.js and designed with an eye towards brutalist style and hosted on Netlify CMS.",
+  "sitedescription": "This website is built with nuxt.js and designed with an eye towards brutalist style and hosted on Netlify CMS.",
   "siteicon": "/images/uploads/icon.png",
   "showmenu": true,
   "emailsignup": true,
