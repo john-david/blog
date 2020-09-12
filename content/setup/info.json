@@ -1,6 +1,6 @@
 {
   "sitename": "John David",
-  "sitedescription": "A Data Science and Engineering blog built in a brutalist style on Netlify CMS and Nuxt.js.",
+  "sitedescription": "This is my personal blog. I write about Data Science, Software Engineering and whatever else I feel like. This website is built and designed with an eye towards brutalist style and hosted on Netlify CMS and Nuxt.js.",
   "siteicon": "/images/uploads/icon.png",
   "showmenu": true,
   "emailsignup": true,
