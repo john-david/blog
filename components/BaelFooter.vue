@@ -37,7 +37,7 @@
         </div>
         <div v-if="signupBoolean" class="c-25 xs-text-left xs-p2 xs-border">
             <div v-if="!sent" class="item">
-                <div class="footer__heading xs-mb2">Newsletter Signup</div>
+                <div class="footer__heading xs-mb2">Updates Signup</div>
                 <form @submit.prevent="processForm" action="/.netlify/functions/app" name="mailinglist">
                     <input type="email" v-model="emaildata.email" class="text-input text-input--small xs-mb1 xs-mr2" placeholder="you@email.com">
                     <button type="submit" class="button button--transparent button--small">Submit</button>
@@ -60,7 +60,13 @@
         </div>
         <div class="xs-text-left xs-p2 xs-border" :class="signupAboutSize">
             <div class="item">
-                <div class="footer__heading xs-mb2">Deploy</div>
+                <div class="footer__heading xs-mb2"> 
+                    <span class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='[ "John David.", "J", "JO", "JOH", "JOHN" , "JOHN " , "JOHN D" , "JOHN DA" , "JOHN DAV" , "JOHN DAVI" , "JOHN DAVID"
+                    , "JOHN DAVID."]'></span>
+                
+                </div>
 
                 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/jake-101/bael-template">
             <img style="height:29px;width:auto;" src="~/assets/deploy.svg" title="Deploy to Netlify">
