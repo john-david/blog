@@ -1,8 +1,8 @@
 {
-  "name": "bael-cms-template",
+  "name": "johndavid.org",
   "version": "0.1.2",
-  "description": "A fashionable brutalist blog template using Netlify CMS and Nuxt.js",
-  "author": "jake101 <hello@jake101.com>",
+  "description": "A brutalist blog - Netlify CMS and Nuxt.js",
+  "author": "johndavid <john@johndavid.org>",
   "scripts": {
     "dev": "nuxt",
     "serve": "nuxt",
@@ -24,11 +24,8 @@
     "netlify-lambda": "^1.4.3",
     "node-sass": "^4.9.2",
     "nuxt": "^2.0.0",
-    "vue-animejs": "^2.1.1",
     "vue-lazyload": "^1.2.6",
-    "vue-moment": "^4.0.0",
-    "vue-roller": "^1.12.3",
-    "vue-typed-js": "^0.1.2"
+    "vue-moment": "^4.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
