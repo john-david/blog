@@ -2,44 +2,44 @@ importScripts('/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/13d05af.js",
-    "revision": "4953e595d11f444c0162822fec9eb2a8"
+    "url": "/_nuxt/1d69aff.js",
+    "revision": "a0e3ba561e39457480961bf04429ec2f"
   },
   {
-    "url": "/_nuxt/200312a.js",
-    "revision": "98fe3a3cd41d55c2141f899834eda0b1"
+    "url": "/_nuxt/2f3b282.js",
+    "revision": "b665a1a8ddf26461cab1a0db100a5770"
   },
   {
-    "url": "/_nuxt/204d89b.js",
-    "revision": "3f3018cc883b0c08cba0a26b5bc66291"
+    "url": "/_nuxt/3170e1c.js",
+    "revision": "25a6fe71d6ec0e1d9e0a10d3c5d3759d"
   },
   {
-    "url": "/_nuxt/5944929.js",
-    "revision": "c428c2afd173bd45bbb8a45caa2fd81e"
+    "url": "/_nuxt/6b0d0d9.js",
+    "revision": "8db6bbb37146934e4ae00fa3ac288cfd"
   },
   {
-    "url": "/_nuxt/8936c19.js",
-    "revision": "86e8c3841765b72e14e34dcc2336e932"
+    "url": "/_nuxt/8153221.js",
+    "revision": "5c455cd0feb0ac6f37682615f5582942"
   },
   {
-    "url": "/_nuxt/9b4ef5c.js",
-    "revision": "eec93e02f28cdb032d685934e7bc4250"
+    "url": "/_nuxt/8748572.js",
+    "revision": "67108ee12de97bd0488933ef1a7c0aa1"
+  },
+  {
+    "url": "/_nuxt/8eaeebd.js",
+    "revision": "2ec99e7f9018e0103fcc3e9dc13a9276"
+  },
+  {
+    "url": "/_nuxt/a70ca79.js",
+    "revision": "0d55cb3efe00cc01b6c86f2b8915a41d"
   },
   {
     "url": "/_nuxt/app.db06eec.css",
     "revision": "c9ec394e935eb37753d33233fb3d9d63"
   },
   {
-    "url": "/_nuxt/c8e6c94.js",
-    "revision": "d753a50bdaf03c9d3ba3e88b9ac053a4"
-  },
-  {
-    "url": "/_nuxt/d624c4e.js",
-    "revision": "99df464f03cbddb9fbd210f6277748a6"
-  },
-  {
-    "url": "/_nuxt/f011f12.js",
-    "revision": "414c876eca7cc62eb5e2341c0d2827e3"
+    "url": "/_nuxt/d87b05a.js",
+    "revision": "d487704969ccf929c75f377508fe6f44"
   },
   {
     "url": "/_nuxt/pages/categories.464d25b.css",
@@ -54,8 +54,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "570a46bcac73e9592d39654829f3ca8a"
   },
   {
-    "url": "/_nuxt/vendors/app.580f46c.css",
-    "revision": "1d6cd4793334d3db929aba7e3e98ec92"
+    "url": "/_nuxt/vendors/app.920e5d8.css",
+    "revision": "3e3569ee1fdeca689c8b42a2f26636bd"
   }
 ], {
   "cacheId": "johndavid.org",
