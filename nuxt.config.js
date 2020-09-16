@@ -93,7 +93,11 @@ middleware: ['title']
   },{
     src: "~/plugins/lazyload",
     ssr: false
-  }],
+  },{
+    src: "~/plugins/vuetype.js",
+    ssr: false
+  }
+],
   /*
   ** Build configuration
   */

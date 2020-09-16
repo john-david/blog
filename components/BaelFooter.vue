@@ -31,13 +31,13 @@
         </div>
         <div class="xs-text-left xs-p2 xs-border" :class="signupAboutSize">
             <div class="item">
-                <div v-show="siteDescription" class="footer__heading xs-mb2">About</div>
+                <div v-show="siteDescription" class="footer__heading xs-mb2">johndavid.org</div>
                 <p v-show="siteDescription">{{siteDescription}}</p>
             </div>
         </div>
         <div v-if="signupBoolean" class="c-25 xs-text-left xs-p2 xs-border">
             <div v-if="!sent" class="item">
-                <div class="footer__heading xs-mb2">Updates Signup</div>
+                <div class="footer__heading xs-mb2">Blog Updates Signup</div>
                 <form @submit.prevent="processForm" action="/.netlify/functions/app" name="mailinglist">
                     <input type="email" v-model="emaildata.email" class="text-input text-input--small xs-mb1 xs-mr2" placeholder="you@email.com">
                     <button type="submit" class="button button--transparent button--small">Submit</button>
@@ -60,31 +60,74 @@
         </div>
         <div class="xs-text-left xs-p2 xs-border" :class="signupAboutSize">
             <div class="item">
-                <div class="footer__heading xs-mb2"> 
-                    <span class="txt-rotate"
-                    data-period="2000"
-                    data-rotate='[ "John David.", "J", "JO", "JOH", "JOHN" , "JOHN " , "JOHN D" , "JOHN DA" , "JOHN DAV" , "JOHN DAVI" , "JOHN DAVID"
-                    , "JOHN DAVID."]'></span>
-                
-                </div>
+                <div class="footer__heading xs-mb2"> Data Science + Software Engineering </div>
 
-                <a href="https://app.netlify.com/start/deploy?repository=https://github.com/jake-101/bael-template">
-            <img style="height:29px;width:auto;" src="~/assets/deploy.svg" title="Deploy to Netlify">
-          </a>
+<svg height="75" width="auto"
+     version="1.1" 
+     id="radar-circle-other"
+     pointer-events="none">
+				   
+                    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="grey" stroke-width="16px" stroke-opacity="0.4">
+					      <animate attributeName="r" from="0" to="1220" dur="5s" repeatCount="indefinite" begin="0.25s" />
+				    </circle>
+				  
+				    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="grey" stroke-width="12px" stroke-opacity="0.4">
+					      <animate attributeName="r" from="0" to="1220" dur="3s" repeatCount="indefinite" begin="1.25s" />
+				    </circle>
+				  
+				    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="grey" stroke-width="8px" stroke-opacity="0.4">
+					      <animate attributeName="r" from="0" to="1220" dur="6s" repeatCount="indefinite" begin="2.25s" />
+				    </circle>
+				  
+				    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="grey" stroke-width="4px" stroke-opacity="0.4">
+					      <animate attributeName="r" from="0" to="1220" dur="9s" repeatCount="indefinite" begin="3.25s" />
+				    </circle>
+				  
+				    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="grey" stroke-width="2px" stroke-opacity="0.4">
+					      <animate attributeName="r" from="0" to="1220" dur="6s" repeatCount="indefinite" begin="4.25s" />
+				    </circle>
+                    <defs>
+                    <path id="double-wave"
+                        fill="none"
+                        stroke="black"
+                        stroke-width="2px"
+                        d="M0 50
+                            C 40 10, 60 10, 100 50   
+                            C 140 75, 160 75, 200 50
+                            C 240 10, 260 10, 300 50 
+                            C 340 75, 360 75, 400 50
+                            C 440 10, 460 10, 500 50
+                            C 540 75, 560 75, 600 50
+                            C 640 10, 660 10, 700 50
+                            L 700 100 L 0 100 Z"             
+                    />
+                    </defs>
+                    <use xlink:href="#double-wave" x="0" y="0">
+                    <animate attributeName="x" from="0" to="-200" dur="3s"
+                            repeatCount="indefinite"/>
+                    </use>
+  
+				</svg>
+
 
             </div>
         </div>
         <div class="c-12 xs-text-left xs-p2 xs-border">
-            <div class="item xs-text-6"><a href="https://github.com/jake-101/bael-template">Bael</a>, An open source design by
-                <a href="https://jake101.com">jake101</a>
+            
+            <!--
+            <div class="item xs-text-6">
             </div>
+            -->
+
         </div>
     </div>
 </footer>
 </template>
 
 <script>
+
 export default {
+  
     props: ["pagination"],
     watchQuery: ['page'],
     data() {
@@ -92,11 +135,10 @@ export default {
             emaildata: {
                 email: ""
             },
-            sent: false
+            sent: false,
         };
     },
     methods: {
-
         async processForm() {
             try {
                 const sendgrid = await this.$axios.post(
@@ -108,7 +150,7 @@ export default {
             } catch (e) {
                 console.log(e);
             }
-        }
+        },
     },
     computed: {
         nextCheck() {
@@ -122,10 +164,8 @@ export default {
             var tp = (this.$store.state.gridNumPosts * 1) + (this.$store.state.gridOffset * 1)
             if (tp > this.$store.state.resultsnum) {
                 return this.$store.state.resultsnum
-
             } else {
                 return tp + 1
-
             }
         },
         signupAboutSize: function () {
@@ -154,7 +194,6 @@ export default {
                 return Number(this.$route.query.page);
             }
         },
-
         connectData() {
             return this.$store.state.connect.connectlinks;
         },
@@ -170,6 +209,7 @@ export default {
 </script>
 
 <style scoped>
+
 .text-input {
     max-width: 100%;
 }
@@ -177,4 +217,9 @@ export default {
 .footer__heading {
     max-width: 100%;
 }
+
 </style>
+
+
+
+

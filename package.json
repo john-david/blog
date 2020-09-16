@@ -24,9 +24,11 @@
     "netlify-lambda": "^1.4.3",
     "node-sass": "^4.9.2",
     "nuxt": "^2.0.0",
-    "sass-loader": "^7.0.3",
+    "vue-animejs": "^2.1.1",
     "vue-lazyload": "^1.2.6",
-    "vue-moment": "^4.0.0"
+    "vue-moment": "^4.0.0",
+    "vue-roller": "^1.12.3",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
@@ -34,7 +36,9 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.7.0",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^7.3.1"
   },
   "engines": {
     "node": "^9.0.0"

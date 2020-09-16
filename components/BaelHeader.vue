@@ -42,7 +42,6 @@ export default {
           weight: 0.7
         }
       ],
-
       compResults: []
     };
   },
