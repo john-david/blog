@@ -62,7 +62,7 @@
             <div class="item">
                 <div class="footer__heading xs-mb2"> Data Science + Software Engineering </div>
 
-<svg height="75" width="auto"
+<svg height="75" max-width: 100%
      version="1.1" 
      id="radar-circle-other"
      pointer-events="none">
